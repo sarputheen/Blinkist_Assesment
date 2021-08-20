@@ -1,6 +1,6 @@
-# Blinkist_Assesment
+# Blinkist Assesment
 
-Small POC for Mobile Application Auotmation
+Small POC for Mobile Application Auotomation
 
 ## Tech stack Used
 Java, Cucumber, Appium, Extent Report
