@@ -15,7 +15,7 @@ Java, Cucumber, Appium, Extent Report
     
 
 ## Note:  
-          As I have got the source code of both IOS and Android builds, I have built the TestingChallenge.app file using Xcode and ran it using the Xcode simulators.If this needs to be executed on real IOS device please use the application with .ipa extension. 
+- As I have got the source code of both IOS and Android builds, I have built the TestingChallenge.app file using Xcode and ran it using the Xcode simulators.If this needs to be executed on real IOS device please use the application with .ipa extension. 
 
 
 ## Project Setup 
@@ -40,7 +40,7 @@ Java, Cucumber, Appium, Extent Report
 
 
 ## Approach 
-    I have used the Page Object Model design pattern for this framework design. So that we can add new or remove old features if required. Also I have covered the core functionalities of both "Book List" and "You Tube Video Play".
+- I have used the Page Object Model design pattern for this framework design. So that we can add new or remove old features if required. Also I have covered the core functionalities of both "Book List" and "You Tube Video Play".
  
 ## Next step of Framework Implementation
 - As for now this framework will work only on IOS devices. If this needs to be supported for both IOS and Android we can use the json for capability changes and based on the OS environment provided in the capabilities json file we can create the driver instance and also we need to create the two classes to pick the web elements ex: "public class IosLocators"  and "public class AndroidLocators" . 
