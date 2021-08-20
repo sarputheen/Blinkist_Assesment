@@ -24,8 +24,7 @@ public class DriverInitialization {
 		capabilities.setCapability("platformVersion", "14.5");
 		capabilities.setCapability("deviceName", "iPhone 12 Pro Max");
 		capabilities.setCapability("platformName", "iOS");
-		capabilities.setCapability("app", "/Users/sarputheen/Downloads/Challenge/Mobile_Test/src/main/resources/appfile/TestingChallenge.app");
-//		capabilities.setCapability("udid", "E28FD2B5-4D3B-4B14-80A0-490C6C2D685D");
+		capabilities.setCapability("app", System.getProperty("user.dir")+"/src/main/resources/appfile/TestingChallenge.app");
 		capabilities.setCapability("automationName", "XCUITest");
 		capabilities.setCapability("noReset", false);
 		capabilities.setCapability("useNewWDA", true);
