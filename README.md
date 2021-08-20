@@ -45,6 +45,7 @@ Java, Cucumber, Appium, Extent Report
 ## Next step of Framework Implementation
 - As for now this framework will work only on IOS devices. If this needs to be supported for both IOS and Android we can use the json for capability changes and based on the OS environment provided in the capabilities json file we can create the driver instance and also we need to create the two classes to pick the web elements ex: "public class IosLocators"  and "public class AndroidLocators" . 
 - Parallel testing also can be added in this framework using TestNG
+- This can be integrated with Jenkins/Github actions (CI/CD) , Browserstack (Compatability/Cloud execution)  , TestRail/Jira (Test Management Tool)
     
   
 
