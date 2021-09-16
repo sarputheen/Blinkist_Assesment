@@ -35,7 +35,7 @@ public class BasePage {
 	public static WebDriver driver ;
 	static String waitstrategy = "Visible";
 
-	public BasePage(IOSDriver driver2) {
+	public BasePage(AppiumDriver driver2) {
 		
 		 this.driver = driver2;
 	}

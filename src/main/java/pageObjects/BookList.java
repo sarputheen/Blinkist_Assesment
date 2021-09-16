@@ -3,14 +3,17 @@ package pageObjects;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.ios.IOSDriver;
 
 public class BookList extends BasePage {
 
-	public BookList(IOSDriver driver2) {
+	public BookList(AppiumDriver driver2) {
 		super(driver2);
 	}
 

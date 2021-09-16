@@ -6,13 +6,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.ios.IOSDriver;
 
 public class YouTubeVideoPlay extends BasePage {
 
-	public YouTubeVideoPlay(IOSDriver driver2) {
-		super(driver2);
 
+	public YouTubeVideoPlay(AppiumDriver driver2) {
+		super(driver2);
 	}
 	private static By screen = By.xpath("//XCUIElementTypeOther[@name='YouTube Video Player']/XCUIElementTypeOther/XCUIElementTypeOther");
 	private static By btnPlay = By.xpath("//XCUIElementTypeSwitch[@name='Play video']");

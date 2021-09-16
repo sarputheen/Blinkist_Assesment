@@ -12,10 +12,10 @@ import pageObjects.YouTubeVideoPlay;
 
 public class BookListStepDefinition {
 
-	@Given("I Launch the app")
-	public void i_launch() throws MalformedURLException {
-		DriverInitialization.driverInit();
-	}
+//	@Given("I Launch the app")
+//	public void i_launch() throws MalformedURLException {
+//		DriverInitialization.driverInit();
+//	}
 	
 	@And("I am in the Book List screen")
 	public void i_am_in_the_Book_List_screen() {
@@ -68,9 +68,9 @@ public class BookListStepDefinition {
 		BookList.gotToYouTube();
 	}
 	
-	@Then("I quit the app")
-	public void i_quit() {
-		DriverInitialization.teardown();
-	}
+//	@Then("I quit the app")
+//	public void i_quit() {
+//		DriverInitialization.teardown();
+//	}
 
 }

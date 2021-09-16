@@ -8,14 +8,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.ios.IOSDriver;
+import io.appium.java_client.android.AndroidDriver;
+
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import pageObjects.BasePage;
 
 public class DriverInitialization {
-	public static IOSDriver driver;
+	public static AppiumDriver driver;
 	
 	public static BasePage Base = null;
 	@Before
@@ -25,10 +27,11 @@ public class DriverInitialization {
 		capabilities.setCapability("deviceName", "iPhone 12 Pro Max");
 		capabilities.setCapability("platformName", "iOS");
 		capabilities.setCapability("app", System.getProperty("user.dir")+"/src/main/resources/appfile/TestingChallenge.app");
+//		capabilities.setCapability("udid", "E28FD2B5-4D3B-4B14-80A0-490C6C2D685D");
 		capabilities.setCapability("automationName", "XCUITest");
 		capabilities.setCapability("noReset", false);
 		capabilities.setCapability("useNewWDA", true);
-		driver = new IOSDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+		driver = new AppiumDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		Base = new BasePage(driver);
 		
